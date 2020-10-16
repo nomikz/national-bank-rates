@@ -1,0 +1,28 @@
+{
+    "name": "nomikz/national-bank-rates",
+    "description": "This packages retieves the rates of KZT from National Bank api.",
+    "type": "library",
+    "authors": [
+        {
+            "name": "nomi",
+            "email": "nomikztop@gmail.com"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Nomikz\\NationalBankRates\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nomikz\\NationalBankRates\\NationalBankRatesProvider"
+            ],
+            "aliases": {
+                "NationalBankRates": "Nomikz\\NationalBankRates\\Facades\\NationalBankRates"
+            }
+        }
+    }
+}
